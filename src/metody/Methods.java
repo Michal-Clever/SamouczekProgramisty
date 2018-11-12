@@ -1,9 +1,11 @@
 package metody;
 
+import java.util.Scanner;
+
 public class Methods {
 
-    boolean isBig (int someNumber){
-        return someNumber >100;
+    boolean isBig(int someNumber) {
+        return someNumber > 100;
     }
 
     private static boolean isTemperaturePositive(double temperature) {
@@ -11,8 +13,7 @@ public class Methods {
 
         if (isPositive) {
             System.out.println("Temperatura " + temperature + " jest dodatnia.");
-        }
-        else {
+        } else {
             System.out.println("Temperatura " + temperature + " nie jest dodatnia.");
         }
 
@@ -21,17 +22,15 @@ public class Methods {
 
     public static void main(String[] args) {
 
-        Methods firstNumber = new Methods();
-        firstNumber.isBig(99);
-     //   System.out.println(firstNumber.isBig(101));
+//        Methods firstNumber = new Methods();
+//        firstNumber.isBig(99);
+//     //   System.out.println(firstNumber.isBig(101));
 
-        int plus =10;
-        int minus = -9;
-        int zero = 0;
-
-        System.out.println(isTemperaturePositive(plus));
-        System.out.println(isTemperaturePositive(minus));
-        System.out.println(isTemperaturePositive(zero));
+        System.out.println("Podaj tempurature");
+        int temperature;
+        Scanner odczyt = new Scanner(System.in);
+        temperature = odczyt.nextInt();
+        System.out.println(isTemperaturePositive(temperature));
 
 
     }
