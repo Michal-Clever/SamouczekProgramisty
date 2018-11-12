@@ -14,6 +14,7 @@ public class Main {
         Stock cwir = new Stock(3);
 
         System.out.println(lola.getWeight());
+        System.out.println("Check");
         System.out.println(lola.isBig(1));
 
     }
