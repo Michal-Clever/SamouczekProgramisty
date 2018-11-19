@@ -10,8 +10,7 @@ public class Hour {
     public int getHour() {
         return hour;
     }
-
-
+    
     public int getNumberOfSeconds(int hour) {
         if (hour < 0) {
             throw new IllegalArgumentException("Hour must be >= 0: " + hour);
